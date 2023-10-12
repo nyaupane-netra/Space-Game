@@ -1,0 +1,16 @@
+function movespaceship(){
+		var top =110;
+	setInterval(() => {
+		var left= leftsag(0 ,999-99) ;
+		document.getElementById('alien').style.left=left + 'px';
+		// document.getElementById('bomb').style.left= (left+34)+'px'; // spaceship moves  itself towards left
+	    document.getElementById('alien').style.top= '15px';// makes spaceship at the top if the screen
+		// document.getElementById('bomb').style.top=top +'px'; 
+		setInterval(()=>{
+			document.getElementById('bomb').style.top=(top+10)+'px'; 
+		}, 500
+		
+		);
+	},500); //every 1/2 second
+
+}
